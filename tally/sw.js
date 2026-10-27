@@ -1,6 +1,6 @@
 // Tally service worker: keeps the app on the phone so it opens offline.
 // The page is fetched fresh when there's a connection (so updates arrive), else served from the cache.
-const CACHE = 'tally-202610271303';
+const CACHE = 'tally-202610271313';
 const FILES = ["./","manifest.webmanifest","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
