@@ -4693,6 +4693,18 @@ button.walk-n:focus-visible { outline: 2px solid var(--course, var(--brand)); ou
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* Recommended cards: the "Start: …" button wraps long lesson titles and sits at the card's foot. */
+.rec .btn {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.25;
+  padding-block: 9px;
+  max-width: 100%;
+  margin-top: auto;
+}
+.rec > .k-muted {
+  overflow-wrap: anywhere;
+}
 
 /* ===================================================================
    Motion. Brilliant-style: things arrive with a little spring, answers
